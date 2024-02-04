@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+def search_replace(my_list, search, replace):
+    new_list = [replace if n == search else n for n in my_list]
+    return (new_list)
 """
 [1]search_replace: A function that replaces all occurrences
 of an element by another in a new list
@@ -8,7 +11,3 @@ of an element by another in a new list
 [4]search: This is the element to replace in the list
 [5]replace: This is the new element
 """
-
-def search_replace(my_list, search, replace):
-    new_list = [replace if n == search else n for n in my_list]
-    return (new_list)
