@@ -2,27 +2,27 @@
 
 ##### [0]Write a function that prints x elements of a list.
 
-[1] Prototype: def safe_print_list(my_list=[], x=0): <br>
-[2] my_list can contain any type (integer, string, etc.) <br>
-[3] All elements must be printed on the same line followed by a new line. <br>
-[4] x represents the number of elements to print <br>
-[5] x can be bigger than the length of my_list <br>
-[6] Returns the real number of elements printed <br>
-[7] You have to use try: / except: <br>
-[8] You are not allowed to import any module <br>
-[9] You are not allowed to use len() <br>
+- Prototype: def safe_print_list(my_list=[], x=0):
+- my_list can contain any type (integer, string, etc.)
+- All elements must be printed on the same line followed by a new line
+- x represents the number of elements to print
+- x can be bigger than the length of my_list
+- Returns the real number of elements printed
+- You have to use try: / except:
+- You are not allowed to import any module
+- You are not allowed to use len()
 
 ##### [1]Write a function that prints an integer with "{:d}".format().
 
-[1] Prototype: def safe_print_integer(value): <br>
-[2] value can be any type (integer, string, etc.) <br>
-[3] The integer should be printed followed by a new line <br>
-[4] Returns True if value has been correctly printed (it means the value is an integer) <br>
-[5] Otherwise, returns False <br>
-[6] You have to use try: / except: <br>
-[7] You have to use "{:d}".format() to print as integer <br>
-[8] You are not allowed to import any module <br>
-[9] You are not allowed to use type() <br>
+- Prototype: def safe_print_integer(value):
+- value can be any type (integer, string, etc.)
+- The integer should be printed followed by a new line
+- Returns True if value has been correctly printed (it means the value is an integer)
+- Otherwise, returns False
+- You have to use try: / except:
+- You have to use "{:d}".format() to print as integer
+- You are not allowed to import any module
+- You are not allowed to use type()
 
 ##### [2]Write a function that prints the first x elements of a list and only integers.
 
@@ -40,59 +40,59 @@ by a new line - other type of value in the list must be skipped (in silence).
 
 ##### [3]Write a function that divides 2 integers and prints the result.
 
-[a]Prototype: def safe_print_division(a, b):
-[b]You can assume that a and b are integers
-[c]The result of the division should print on the finally: section preceded by Inside result:
-[d]Returns the value of the division, otherwise: None
-[e]You have to use try: / except: / finally:
-[f]You have to use "{}".format() to print the result
-[g]You are not allowed to import any module
+- Prototype: def safe_print_division(a, b):
+- You can assume that a and b are integers
+- The result of the division should print on the finally: section preceded by Inside result:
+- Returns the value of the division, otherwise: None
+- You have to use try: / except: / finally:
+- You have to use "{}".format() to print the result
+- You are not allowed to import any module
 
 ##### [4]Write a function that divides element by element 2 lists.
 
-[a]Prototype: def list_division(my_list_1, my_list_2, list_length):
-[b]my_list_1 and my_list_2 can contain any type (integer, string, etc.)
-[c]list_length can be bigger than the length of both lists
-[d]Returns a new list (length = list_length) with all divisions
-[e]If 2 elements can’t be divided, the division result should be equal to 0
-[f]If an element is not an integer or float:
+- Prototype: def list_division(my_list_1, my_list_2, list_length):
+- my_list_1 and my_list_2 can contain any type (integer, string, etc.)
+- list_length can be bigger than the length of both lists
+- Returns a new list (length = list_length) with all divisions
+- If 2 elements can’t be divided, the division result should be equal to 0
+- If an element is not an integer or float:
 print: wrong type
-[g]If the division can’t be done (/0):
+- If the division can’t be done (/0):
 print: division by 0
-[h]If my_list_1 or my_list_2 is too short
+- If my_list_1 or my_list_2 is too short
 print: out of range
-[i]You have to use try: / except: / finally:
-[j]You are not allowed to import any module
+- You have to use try: / except: / finally:
+- You are not allowed to import any module
 
 ##### [5]Write a function that raises a type exception.
 
-[a]Prototype: def raise_exception():
-[b]You are not allowed to import any module
+- Prototype: def raise_exception():
+- You are not allowed to import any module
 
 ##### [6]Write a function that raises a name exception with a message.
 
-[a]Prototype: def raise_exception_msg(message=""):
-[b]You are not allowed to import any module
+- Prototype: def raise_exception_msg(message=""):
+- You are not allowed to import any module
 
 ##### [7]Write a function that prints an integer.
 
-[a]Prototype: def safe_print_integer_err(value):
-[b]value can be any type (integer, string, etc.)
-[c]The integer should be printed followed by a new line
-[d]Returns True if value has been correctly printed (it means the value is an integer)
-[e]Otherwise, returns False and prints in stderr the error precede by Exception:
-[f]You have to use try: / except:
-[g]You have to use "{:d}".format() to print as integer
-[h]You are not allowed to use type()
+- Prototype: def safe_print_integer_err(value):
+- value can be any type (integer, string, etc.)
+- The integer should be printed followed by a new line
+- Returns True if value has been correctly printed (it means the value is an integer)
+- Otherwise, returns False and prints in stderr the error precede by Exception:
+- You have to use try: / except:
+- You have to use "{:d}".format() to print as integer
+- You are not allowed to use type()
 
 ##### [8]Write a function that executes a function safely.
 
-[a]Prototype: def safe_function(fct, *args):
-[b]You can assume fct will be always a pointer to a function
-[c]Returns the result of the function,
-[d]Otherwise, returns None if something happens during the
+- Prototype: def safe_function(fct, *args):
+- You can assume fct will be always a pointer to a function
+- Returns the result of the function,
+- Otherwise, returns None if something happens during the
 function and prints in stderr the error precede by Exception:
-[e]You have to use try: / except:
+- You have to use try: / except:
 
 ##### [9]Write the Python function def magic_calculation(a, b):
 ##### that does exactly the same as the following Python bytecode:
@@ -102,32 +102,32 @@ function and prints in stderr the error precede by Exception:
 
 Python lists:
 
-[a]Prototype: void print_python_list(PyObject *p);
-[b]Format: see example
-[c]If p is not a valid PyListObject, print an error message (see example)
+- Prototype: void print_python_list(PyObject *p);
+- Format: see example
+- If p is not a valid PyListObject, print an error message (see example)
 
 Python bytes:
 
-[a]Prototype: void print_python_bytes(PyObject *p);
-[b]Format: see example
-[c]Line “first X bytes”: print a maximum of 10 bytes
-[d]If p is not a valid PyBytesObject, print an error message (see example)
+- Prototype: void print_python_bytes(PyObject *p);
+- Format: see example
+- Line “first X bytes”: print a maximum of 10 bytes
+- If p is not a valid PyBytesObject, print an error message (see example)
 
 Python float:
 
-[a]Prototype: void print_python_float(PyObject *p);
-[b]Format: see example
-[c]If p is not a valid PyFloatObject, print an error message (see example)
-[d]Read /usr/include/python3.4/floatobject.h
+- Prototype: void print_python_float(PyObject *p);
+- Format: see example
+- If p is not a valid PyFloatObject, print an error message (see example)
+- Read /usr/include/python3.4/floatobject.h
 
 About:
 
-[a]Python version: 3.4
-[b]You are allowed to use the C standard library
-[c]Your shared library will be compiled with this command line:
+- Python version: 3.4
+- You are allowed to use the C standard library
+- Your shared library will be compiled with this command line:
 gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,
 libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c
-[d]You are not allowed to use the following macros/functions:
+- You are not allowed to use the following macros/functions:
 Py_SIZE
 Py_TYPE
 PyList_Size
@@ -145,8 +145,8 @@ PySequence_Fast_ITEMS
 
 NOTE:
 
-[a]The python script will be launched using the -u option (Force stdout to be unbuffered).
-[b]It is strongly advised to either use setbuf(stdout, NULL);
+- The python script will be launched using the -u option (Force stdout to be unbuffered).
+- It is strongly advised to either use setbuf(stdout, NULL);
 or fflush(stdout) in your C functions IF you choose to use printf.
 The reason to that is that Pythonsprintand libCs printf don’t share
 the same buffer, and the output can appear disordered.
