@@ -2,41 +2,41 @@
 
 ##### [0]Write a function that prints x elements of a list.
 
-[a]Prototype: def safe_print_list(my_list=[], x=0): <br>
-[b]my_list: can contain any type (integer, string, etc.) <br>
-[c]All elements must be printed on the same line followed by a new line. <br>
-[d]x: represents the number of elements to print <br>
-[e]x: can be bigger than the length of my_list <br>
-[f]Returns the real number of elements printed <br>
-[g]You have to use try: / except: <br>
-[h]You are not allowed to import any module <br>
-[i]You are not allowed to use len() <br>
+[1] Prototype: def safe_print_list(my_list=[], x=0): <br>
+[2] my_list can contain any type (integer, string, etc.) <br>
+[3] All elements must be printed on the same line followed by a new line. <br>
+[4] x represents the number of elements to print <br>
+[5] x can be bigger than the length of my_list <br>
+[6] Returns the real number of elements printed <br>
+[7] You have to use try: / except: <br>
+[8] You are not allowed to import any module <br>
+[9] You are not allowed to use len() <br>
 
 ##### [1]Write a function that prints an integer with "{:d}".format().
 
-[a]Prototype: def safe_print_integer(value):
-[b]value: can be any type (integer, string, etc.)
-[c]The integer should be printed followed by a new line
-[d]Returns: True if value has been correctly printed (it means the value is an integer)
-[e]Otherwise, returns False
-[f]You have to use try: / except:
-[g]You have to use "{:d}".format() to print as integer
-[h]You are not allowed to import any module
-[i]You are not allowed to use type()
+[1] Prototype: def safe_print_integer(value): <br>
+[2] value can be any type (integer, string, etc.) <br>
+[3] The integer should be printed followed by a new line <br>
+[4] Returns True if value has been correctly printed (it means the value is an integer) <br>
+[5] Otherwise, returns False <br>
+[6] You have to use try: / except: <br>
+[7] You have to use "{:d}".format() to print as integer <br>
+[8] You are not allowed to import any module <br>
+[9] You are not allowed to use type() <br>
 
 ##### [2]Write a function that prints the first x elements of a list and only integers.
 
-[a]Prototype: def safe_print_list_integers(my_list=[], x=0):
-[b]my_list: can contain any type (integer, string, etc.)
-[c]All integers have to be printed on the same line followed
+- Prototype: def safe_print_list_integers(my_list=[], x=0):
+- my_list can contain any type (integer, string, etc.)
+- All integers have to be printed on the same line followed
 by a new line - other type of value in the list must be skipped (in silence).
-[d]x: represents the number of elements to access in my_list
-[e]x: can be bigger than the length of my_list - if it’s the case, an exception is expected to occur
-[f]Returns the real number of integers printed
-[g]You have to use try: / except:
-[h]You have to use "{:d}".format() to print an integer
-[i]You are not allowed to import any module
-[j]You are not allowed to use len()
+- x represents the number of elements to access in my_list
+- x can be bigger than the length of my_list - if it’s the case, an exception is expected to occur
+- Returns the real number of integers printed
+- You have to use try: / except:
+- You have to use "{:d}".format() to print an integer
+- You are not allowed to import any module
+- You are not allowed to use len()
 
 ##### [3]Write a function that divides 2 integers and prints the result.
 
