@@ -2,15 +2,15 @@
 
 ##### [0]Write a function that prints x elements of a list.
 
-[a]Prototype: def safe_print_list(my_list=[], x=0):
-[b]my_list: can contain any type (integer, string, etc.)
-[c]All elements must be printed on the same line followed by a new line.
-[d]x: represents the number of elements to print
-[e]x: can be bigger than the length of my_list
-[f]Returns the real number of elements printed
-[g]You have to use try: / except:
-[h]You are not allowed to import any module
-[i]You are not allowed to use len()
+[a]Prototype: def safe_print_list(my_list=[], x=0): <br>
+[b]my_list: can contain any type (integer, string, etc.) <br>
+[c]All elements must be printed on the same line followed by a new line. <br>
+[d]x: represents the number of elements to print <br>
+[e]x: can be bigger than the length of my_list <br>
+[f]Returns the real number of elements printed <br>
+[g]You have to use try: / except: <br>
+[h]You are not allowed to import any module <br>
+[i]You are not allowed to use len() <br>
 
 ##### [1]Write a function that prints an integer with "{:d}".format().
 
