@@ -1,38 +1,45 @@
 #!/usr/bin/python3
-"""class square."""
 
-
+"""
+This is a module on how to
+to incorporate loops in these classes
+"""
 class Square:
+    """
+    This is a class on square
+    Attributes:
+        __size(int): The size of the square
+    """
 
-    def __init__(self, size):
-        """function initializes a new square.
 
-        Args:
-            size (int): size of the new square.
-        """
-        self.size = size
+    def __init__(self, size=0):
+        self.__size = size
 
     @property
+
     def size(self):
-        """current size of the square."""
-        return (self.__size)
+        return self.__size
 
     @size.setter
+
     def size(self, value):
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     def area(self):
-        """current area of the square."""
-        return (self.__size * self.__size)
+        return self.__area ** 2
 
     def my_print(self):
-        """square with the # character."""
-        for i in range(0, self.__size):
-            [print("#", end="") for j in range(self.__size)]
-            print("")
-        if self.__size == 0:
+        """
+        This function will be used to
+        print the # symbol to represent a
+        square based on the size entered by the user
+        """
+
+        for i in range(0, self.size):
+            for j in range(0, self.size):
+                print("#", end="")
             print("")
