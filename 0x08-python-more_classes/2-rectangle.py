@@ -1,57 +1,50 @@
 #!/usr/bin/python3
-"""
-This is a module that creates a class
-which returns a perimeter and the area of
-rectangle
-"""
+"""A class that defines a rectangle based on 1-rectangle.py"""
 
 
 class Rectangle:
-    """
-    This is a blueprint of a rectangle
-    """
-
+    """This is a defined class for rectangle"""
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        """instantiation with the width and height optional"""
+        self.width = width
+        self.height = height
 
+    """Private instance attribute"""
     @property
     def width(self):
+        """property setter FOR WIDTH"""
         return self.__width
 
-
-    @property
-    def height(self):
-        return self.__height
-    
     @width.setter
     def width(self, value):
-        if type(value) != int:
-            raise TypeError("Width must be an integer")
+        """property setter for the width"""
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
+    """another private instance"""
+    @property
+    def height(self):
+        """a  private instance getter for height"""
+        return self.__height
+
     @height.setter
     def height(self, value):
-        if type(value) != int:
+        """the setter for the height property"""
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        """
-        calculate area of a rectangle
-        """
-
-        return (self.__width) * (self.__height)
+        """public instance method"""
+        return self.__width * self.__height
 
     def perimeter(self):
-        """
-        claculate perimeter of a rectangle
-        """
-
-        if self.__width == 0 and self.__height == 0:
-            return 0
-        return (self.__width * 2) + (self.__height * 2)
+        """public instance method for the erimeter of a rectangle"""
+        if self.__width == 0 or self.__height == int(0):
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
