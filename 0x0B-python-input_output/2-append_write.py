@@ -3,5 +3,5 @@
 
 def append_write(filename="", text=""):
     """Open the file in append mode ('a') using 'utf-8' encoding"""
-    with open(filename, mode='a', encoding='utf-8') as file:
-        return file.write(text)
+    with open(filename, mode='a', encoding='utf-8') as a_file:
+        return a_file.write(text)
