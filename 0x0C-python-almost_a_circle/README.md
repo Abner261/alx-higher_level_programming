@@ -42,4 +42,24 @@
 - What is <code>**kwargs</code> and how to use it
 - How to handle named arguments in a function
 
+### Description of what each file shows (Tasks):
+- **main**	---> folder that holds all main.py files provided as test cases.
+- **models**	---> folder that holds the main projects functions for submission
+- **tests**	---> folder that contains all testcase file for functions written (Unittest module)
+
+### Requirements
+#### Python Scripts
+- Allowed editors: **vi,** **vim,** **emacs**
+- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- All your files should end with a new line
+- The first line of all your files should be exactly <code>#!/usr/bin/python3</code>
+- A **README.md** file, at the root of the folder of the project, is mandatory
+- Your code should use the pycodestyle <code>(version 2.8.*)</code>
+- All your files must be executable
+- The length of your files will be tested using **wc**
+- All your modules should be documented: `python3 -c 'print(__import__("my_module").__doc__)'`
+- All your classes should be documented: `python3 -c 'print(__import__("my_module").MyClass.__doc__)'`
+- All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)' `and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
+- A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
 
