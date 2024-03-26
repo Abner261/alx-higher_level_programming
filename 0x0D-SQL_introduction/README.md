@@ -196,15 +196,15 @@ $
 
 	- What does SQL stand for?
 
-	[a] Structured Question Language
+		[a] Structured Question Language
 
-	[b] Sequences of Query Logic
+		[b] Sequences of Query Logic
 
-	[c] Solid Query Language
+		[c] Solid Query Language
 
-	[d] _**Structured Query Language**_
+		[d] _**Structured Query Language**_
 
-	 _**solution [d]**_
+	 	_**solution [d]**_
 
 * **Question #4**
 
@@ -243,3 +243,71 @@ $
 		[d] Document Manipulation Language
 
 		_**solution [c]**_
+
+* **Question #6**
+
+	- What is a relational database? (please select all correct answers)
+
+		[a] data are organized by tables and indexes
+
+		[b] _**a database**_
+
+		[c] _**data are organized by tables, records and columns**_
+
+		[d] a table containing multiple object representation
+
+		[e] _**a table containing only one object representation**_
+
+		[f] married databases
+
+		[g] _**a collection of data**_
+
+		_**solutions [b] [c] [e] [g]**_
+
+* **Question #7**
+
+	- How to you add a new record in the table `users`?
+
+```sh
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+```
+
+[a] INSERT INTO users (id, name, age) VALUES (2, “Betty”);
+
+[b] INSERT users (id, name, age) VALUES (2, “Betty”, 30);
+
+[c] _**INSERT INTO users (id, name, age) VALUES (2, “Betty”, 30);**_
+
+[d] INSERT INTO users (id, name) VALUES (2, “Betty”, 30);
+
+_**solution [c]**_
+
+* **Question #8**
+
+	- What does DDL stand for?
+
+		[a] Document Data Language
+
+		[b] _**Data Definition Language**_
+
+		[c] Data Document Language
+
+		[d] Database Definition Language
+
+		_**solution [b]**_
+
+## Tasks
+
+0. [List databases]()
+
+- Write a script that lists all databases of your MySQL server.
+
+
