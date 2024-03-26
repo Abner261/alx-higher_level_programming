@@ -140,7 +140,7 @@ $
 
 [d] SELECT * FROM users WHERE age IS UP TO 21;
 
-* _**solution [c]**_
+ _**solution [c]**_
 
 * **Question #1**
 
@@ -166,7 +166,7 @@ $
 
 [d] _**DELETE FROM users WHERE id = 89;**_
 
-* _**solution [d]**_
+  _**solution [d]**_
 
 * **Question #2**
 
@@ -190,4 +190,58 @@ $
 
 [c] _**SELECT * FROM users;**_
 
-* _**solution [c]**_
+ _**solution [c]**_
+
+* **Question #3**
+
+	- What does SQL stand for?
+
+	[a] Structured Question Language
+
+	[b] Sequences of Query Logic
+
+	[c] Solid Query Language
+
+	[d] _**Structured Query Language**_
+
+	 _**solution [d]**_
+
+* **Question #4**
+
+	- How do you change the name of the `users` record with `id = 89` to `Holberton`?
+
+```sh
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+```
+
+[a] UPDATE users SET name = “Holberton”;
+
+[b] _**UPDATE users SET name = “Holberton” WHERE id = 89;**_
+
+[c] CHANGE users SET name = “Holberton” WHERE id = 89;
+
+ _**solution [b]**_
+
+* **Question #5**
+
+	- What does DML stand for?
+
+	[a] Document Model Language
+
+	[b] Database Manipulation Language
+
+	[c] _**Data Manipulation Language**_
+
+	[d] Document Manipulation Language
+
+		_**solution [c]**_
+
+
