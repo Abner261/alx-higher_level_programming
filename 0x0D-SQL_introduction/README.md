@@ -234,14 +234,12 @@ $
 
 	- What does DML stand for?
 
-	[a] Document Model Language
+		[a] Document Model Language
 
-	[b] Database Manipulation Language
+		[b] Database Manipulation Language
 
-	[c] _**Data Manipulation Language**_
+		[c] _**Data Manipulation Language**_
 
-	[d] Document Manipulation Language
+		[d] Document Manipulation Language
 
 		_**solution [c]**_
-
-
