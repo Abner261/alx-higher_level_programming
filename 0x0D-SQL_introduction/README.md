@@ -262,7 +262,7 @@ $
 
 		[g] _**a collection of data**_
 
-		_**solutions [b] [c] [e] [g]**_
+		_**solutions [b], [c], [e] & [g]**_
 
 * **Question #7**
 
@@ -310,4 +310,20 @@ _**solution [c]**_
 
 - Write a script that lists all databases of your MySQL server.
 
+```sh
+guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+Database                                                                                     
+hbtn_0c_0                                                                                    
+information_schema                                                                           
+mysql                                                                                        
+performance_schema                                                                           
+sys        
+guillaume@ubuntu:~/$
+```
 
+* **Repo:**
+
+	- GitHub repository: `alx-higher_level_programming`
+	- Directory: `0x0D-SQL_introduction`
+	- File: `0-list_databases.sql`
