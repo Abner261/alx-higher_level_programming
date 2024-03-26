@@ -36,14 +36,14 @@
 
 * **General**
 
-- Allowed editors: `vi`, `vim`, `emacs`
-- All your files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0` (version 8.0.25)
-- All your files should end with a new line
-- All your SQL queries should have a comment just before (i.e. syntax above)
-- All your files should start by a comment describing the task
-- All SQL keywords should be in uppercase (`SELECT`, `WHERE`…)
-- A `README.md` file, at the root of the folder of the project, is mandatory
-- The length of your files will be tested using `wc`
+	- Allowed editors: `vi`, `vim`, `emacs`
+	- All your files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0` (version 8.0.25)
+	- All your files should end with a new line
+	- All your SQL queries should have a comment just before (i.e. syntax above)
+	- All your files should start by a comment describing the task
+	- All SQL keywords should be in uppercase (`SELECT`, `WHERE`…)
+	- A `README.md` file, at the root of the folder of the project, is mandatory
+	- The length of your files will be tested using `wc`
 
 ### More Info
 
@@ -114,11 +114,11 @@ $
 
 * **In the container, credentials are** `root/root`
 
-* **Quiz questions**
+### Quiz questions
 
 * **Question #0**
 
-- How do you list all `users` records with `age > 21` in this table?
+	- How do you list all `users` records with `age > 21` in this table?
 
 ```sh
 +-------+-------------------------------------------------------------------------------------------------------------------------------+
@@ -132,13 +132,62 @@ $
 +-------+-------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-- SELECT * FROM users WHERE age BETWEEN 21 AND 89;
+[a] SELECT * FROM users WHERE age BETWEEN 21 AND 89;
 
+[b] SELECT * FROM users WHERE age < 21;
 
-- SELECT * FROM users WHERE age < 21;
+[c]  _**SELECT * FROM users WHERE age > 21;**_
 
+[d] SELECT * FROM users WHERE age IS UP TO 21;
 
-- _**(Answer)SELECT * FROM users WHERE age > 21;**_
+* _**solution [c]**_
 
+* **Question #1**
 
-- SELECT * FROM users WHERE age IS UP TO 21;
+	- How do you delete the `users` record with `id = 89` in this table?
+
+```sh
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+```
+
+[a] DELETE FROM users WHERE id IS EQUAL TO 89;
+
+[b] DELETE users WHERE id = 89;
+
+[c] DELETE FROM users;
+
+[d] _**DELETE FROM users WHERE id = 89;**_
+
+* _**solution [d]**_
+
+* **Question #2**
+
+	- How do you list all `users` in this table?
+
+```sh
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+```
+
+[a] SELECT ALL users;
+
+[b] DELETE * FROM users;
+
+[c] _**SELECT * FROM users;**_
+
+* _**solution [c]**_
