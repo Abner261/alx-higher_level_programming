@@ -192,7 +192,7 @@ $
 
 * Is it possible to give only read access to multiple databases and tables to a user?
 
-	- [a] **Yes***
+	- [a] **Yes**
 
 	- [b] No
 	
@@ -283,3 +283,42 @@ guillaume@ubuntu:~/$
 	- GitHub repository: `alx-higher_level_programming`
 	- Directory: `0x0E-SQL_more_queries`
 	- File: `1-create_user.sql`
+
+2. [Read user](2-create_read_user.sql)
+
+* Write a script that creates the database `hbtn_0d_2` and the user `user_0d_2`
+
+	- `user_0d_2` should have only SELECT privilege in the database `hbtn_0d_2`
+	- The `user_0d_2` password should be set to `user_0d_2_pwd`
+	- If the database `hbtn_0d_2` already exists, your script should not fail
+	- If the user `user_0d_2` already exists, your script should not fail
+
+```sh
+guillaume@ubuntu:~/$ cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+Grants for user_0d_1@localhost                                                                                                
+GRANT SELECT, ..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
+GRANT APPLICATION_PASSWORD_ADMIN,...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`                                        
+Grants for user_0d_2@localhost                                                                                                
+GRANT USAGE ON *.* TO `user_0d_2`@`localhost`                                                                                 
+GRANT SELECT ON `hbtn_0d_2`.* TO `user_0d_2`@`localhost`  
+guillaume@ubuntu:~/$ 
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-higher_level_programming`
+	- Directory: `0x0E-SQL_more_queries`
+	- File: `2-create_read_user.sql`
+
+3. [Always a name](3-force_name.sql)
+
+* Write a script that creates the table force_name on your MySQL server.
+
+	* `force_name` description:
+		- `id` INT
+		- `name` VARCHAR(256) can’t be null
+	- The database name will be passed as an argument of the `mysql` command
+	- If the table `force_name` already exists, your script should not fail
