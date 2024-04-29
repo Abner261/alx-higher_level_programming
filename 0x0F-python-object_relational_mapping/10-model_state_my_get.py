@@ -1,35 +1,41 @@
 #!/usr/bin/python3
-"""Script to print the State object with the name passed as argument
-   from the database hbtn_0e_6_usa
+
+"""
+A Script to print the State object with the name passed as argument
+from the database hbtn_0e_6_usa
 """
 
-import sys
+from sys import argv
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: {} username password database state_name".format(sys.argv[0]))
-        sys.exit(1)
 
-    username, password, database, state_name = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    # Check if the number of arguments is correct
+    if len(argv) != 5:
+        print("Usage: {} <username> <password> <database> <state_name>".format(
+            argv[0]))
+        exit()
 
-    # Create connection to MySQL server
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
-                           .format(username, password, database),
-                           pool_pre_ping=True)
+    # Creating the connection string (engine for database)
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
+        argv[1], argv[2], argv[3]), pool_pre_ping=True)
 
-    # Create session
+    # Creating an instance of Session
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # Query State object with the provided name
-    state = session.query(State).filter(State.name == state_name).first()
+    # Querying the State Objects with the specified name searched for
+    state_name = argv[4]
+    queried_state = session.query(State).filter(
+        State.name == state_name).first()
 
-    if state:
-        print(state.id)
+    # Displaying the results
+    if queried_state:
+        print("{:d}".format(queried_state.id))
     else:
         print("Not found")
 
+    # Closing the session
     session.close()
