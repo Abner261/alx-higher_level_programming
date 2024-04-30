@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-The Module that contains the class definition of a City
+A Module that contains the class definition of a City
 """
 
 from sqlalchemy import Column, Integer, String, ForeignKey
@@ -11,7 +11,7 @@ from relationship_state import Base, State
 
 class City(Base):
     """
-    Class representing the cities table
+    Class representing the cities table.
     Linked to MySQL table "cities"
     """
     __tablename__ = 'cities'
