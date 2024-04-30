@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Module that Defines the State class
+A Module that Defines the State class
 """
 
 from sqlalchemy import Column, Integer, String, create_engine
