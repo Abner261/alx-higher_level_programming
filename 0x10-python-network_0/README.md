@@ -51,3 +51,24 @@
 	- All your classes should be documented: `python3 -c 'print(__import__("my_module").MyClass.__doc__)'`
 	- All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
 	- A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+## Tasks
+
+0. [cURL body size](./0-body_size.sh 0.0.0.0:5000)
+
+* Write a Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
+
+	- The size must be displayed in bytes
+	- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+```sh
+
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-higher_level_programming`
+	- Directory: `0x10-python-network_0`
+	- File: `0-body_size.sh`
