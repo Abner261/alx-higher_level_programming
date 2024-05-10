@@ -135,3 +135,24 @@ root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 	- GitHub repository: `alx-higher_level_programming`
 	- Directory: `0x10-python-network_0`
 	- File: `3-methods.sh`
+
+4. [cURL headers](4-header.sh)
+
+* Write a Bash script that takes in a URL as an argument, sends a `GET` request to the URL, and displays the body of the response
+
+	- A header variable `X-School-User-Id` must be sent with the value `98`
+	- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
+Hello School!
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# 
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-higher_level_programming`
+	- Directory: `0x10-python-network_0`
+	- File: `4-header.sh`
