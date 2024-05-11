@@ -181,7 +181,9 @@ root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 	- Directory: `0x10-python-network_0`
 	- File: `5-post_params.sh`
 
-6. [Find a peak](6-peak.py)	[6-peak.txt](6-peak.txt)
+6. [Find a peak](6-peak.py)
+   
+   [6-peak.txt](6-peak.txt)
 
 **Technical interview preparation:**
 
