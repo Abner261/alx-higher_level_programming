@@ -156,3 +156,27 @@ root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
 	- GitHub repository: `alx-higher_level_programming`
 	- Directory: `0x10-python-network_0`
 	- File: `4-header.sh`
+
+5. [cURL POST parameters](5-post_params.sh)
+
+* Write a Bash script that takes in a URL, sends a `POST` request to the passed URL, and displays the body of the response
+
+	- A variable `email` must be sent with the value `test@gmail.com`
+	- A variable `subject` must be sent with the value `I will always be here for PLD`
+	- You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+```sh
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0# ./5-post_params.sh 0.0.0.0:5000/route_6 ; echo ""
+POST params:
+        email: test@gmail.com
+        subject: I will always be here for PLD
+root@8beaefef1df8:/alx-higher_level_programming/0x10-python-network_0#
+``` 
+
+* **Repo:**
+
+	- GitHub repository: `alx-higher_level_programming`
+	- Directory: `0x10-python-network_0`
+	- File: `5-post_params.sh`
