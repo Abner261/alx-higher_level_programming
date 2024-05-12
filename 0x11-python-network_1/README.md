@@ -160,11 +160,13 @@ root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1#
 	- The body of the response must be display like the following example (tabulation before `-`)
 
 ```sh
-root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# ./4-hbtn_status.py | cat -e
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# vi 4-hbtn_status.py
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# chmod u+x 4-hbtn_status.py 
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./4-hbtn_status.py | cat -e
 Body response:$
         - type: <class 'str'>$
         - content: OK$
-root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1# 
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# 
 ```
 
 * **Repo:**
