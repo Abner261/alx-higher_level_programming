@@ -235,10 +235,9 @@ root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1#
 	- The letter must be sent in the variable `q`
 	- If no argument is given, set `q=""`
 	- If the response body is properly JSON formatted and not empty, display the `id` and `name` like this: `[<id>] <name>`
-
 Otherwise:
-		- Display `Not a valid JSON` if the JSON is invalid
-		- Display `No result` if the JSON is empty
+	  - Display `Not a valid JSON` if the JSON is invalid
+	  - Display `No result` if the JSON is empty
 	- You must use the package `requests` and `sys`
 	- You are not allowed to import packages other than `requests` and `sys`
 
