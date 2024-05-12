@@ -52,7 +52,15 @@
 	- You must use a `with` statement
 
 ```sh
-
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ls
+0-hbtn_status.py  README.md
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# chmod u+x 0-hbtn_status.py 
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./0-hbtn_status.py | cat -e
+Body response:$
+        - type: <class 'bytes'>$
+        - content: b'OK'$
+        - utf8 content: OK$
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1#
 ```
 
 * **Repo:**
