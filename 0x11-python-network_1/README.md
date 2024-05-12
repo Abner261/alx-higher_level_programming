@@ -80,7 +80,15 @@ root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1#
 	- You must use a `with` statement
 
 ```sh
-
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# vi 1-hbtn_header.py
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# chmod u+x 1-hbtn_header.py 
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ls
+0-hbtn_status.py  1-hbtn_header.py  README.md
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./1-hbtn_header.py https://alx-intranet.hbtn.io
+6016bdc3-b955-448b-87e1-ed4e48899a5d
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./1-hbtn_header.py https://alx-intranet.hbtn.io
+532abc67-81eb-49d6-9194-9b6ef460fb7a
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1#
 ```
 
 * **Repo:**
