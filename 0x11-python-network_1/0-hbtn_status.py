@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 This script sends a GET request to the provided URL
 using 'urllib.request.urlopen()' and then reads
