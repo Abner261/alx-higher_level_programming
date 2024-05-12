@@ -237,8 +237,8 @@ root@6bacb30be86d:/alx-higher_level_programming/0x11-python-network_1#
 	- If the response body is properly JSON formatted and not empty, display the `id` and `name` like this: `[<id>] <name>`
 
 * Otherwise:
-		* Display `Not a valid JSON` if the JSON is invalid
-		* Display `No result` if the JSON is empty
+		- Display `Not a valid JSON` if the JSON is invalid
+		- Display `No result` if the JSON is empty
 	- You must use the package `requests` and `sys`
 	- You are not allowed to import packages other than `requests` and `sys`
 
@@ -295,7 +295,7 @@ You must use the GitHub API, here is the documentation https://developer.github.
 Print all commits by: `<sha>: <author name>` (one by line)
 ```
 
-Write a Python script that takes 2 arguments in order to solve this challenge.
+* Write a Python script that takes 2 arguments in order to solve this challenge.
 
 	- The first argument will be the `repository name`
 	- The second argument will be the `owner  name`
