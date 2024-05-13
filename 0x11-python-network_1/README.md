@@ -185,7 +185,13 @@ root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1#
 	- You don’t need to check script arguments (number and type)
 
 ```sh
-
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# vi 5-hbtn_header.py
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# chmod u+x 5-hbtn_header.py 
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./5-hbtn_header.py https://alx-intranet.hbtn.io
+12078ebd-e029-498f-a759-0113d260a414
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1# ./5-hbtn_header.py https://alx-intranet.hbtn.io
+ddbcb30b-b221-459b-8a7d-e791e850b695
+root@e1714dc5a3c9:~/alx-higher_level_programming/0x11-python-network_1#
 ```
 
 * **Repo:**
