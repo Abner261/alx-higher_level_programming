@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" 
+"""
 This Python script takes a URL and an email address as command-line arguments
 sends a POST request to the specified URL with the email as a parameter
 and then displays the body of the response
