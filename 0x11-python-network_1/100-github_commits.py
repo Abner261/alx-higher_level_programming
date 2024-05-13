@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 This script extracts the repository name and owner name from the
 command-line arguments, constructs the GitHub API URL for fetching
@@ -8,20 +9,23 @@ author's name of the last 10 commits if the request is successful
 If the request fails, it prints an error message along
 with the status code of the response
 """
-import sys
-import requests
 
+import requests
+import sys
 
 if __name__ == "__main__":
-    repo = sys.argv[1]
-    owner = sys.argv[2]
+    repo_name = sys.argv[1]
+    owner_name = sys.argv[2]
 
-    url = 'https://api.github.com/repo/owner/commits'
+    url = f"https://api.github.com/repos/{owner_name}/{repo_name}/commits"
+
     response = requests.get(url)
-    json_resp = response.json()
 
-    for commit in json_resp[:10]:
-        commit_data = commit['commit']
-        sha = commit_data.get('sha')
-        author = commit_data.get('author').get('name')
-        print(f"{sha}: {author}")
+    if response.status_code == 200:
+        commits = response.json()[:10]  # Get the latest 10 commits
+        for commit in commits:
+            sha = commit['sha']
+            author_name = commit['commit']['author']['name']
+            print(f"{sha}: {author_name}")
+    else:
+        print("Error: Failed to retrieve commits from the repository.")
