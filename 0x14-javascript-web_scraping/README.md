@@ -160,7 +160,8 @@ abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 	- You must use the module `request`
 
 ```sh
-
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./4-starwars_count.js https://swapi-api.alx-tools.com/api/films
+3
 ```
 
 * **Repo:**
