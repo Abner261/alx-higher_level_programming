@@ -75,7 +75,7 @@ $ export NODE_PATH=/usr/lib/node_modules
 ```sh
 abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./1-writeme.js my_file.txt "Python is cool"
 abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt
-Python is coolcobby@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt ; echo ""
+Python is coolabner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt ; echo ""
 Python is cool
 abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
