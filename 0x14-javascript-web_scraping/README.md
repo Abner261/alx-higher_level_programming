@@ -138,7 +138,11 @@ abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 	- You must use the module `request`
 
 ```sh
-
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./3-starwars_title.js 1
+A New Hope
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./3-starwars_title.js 5
+Attack of the Clones
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 * **Repo:**
