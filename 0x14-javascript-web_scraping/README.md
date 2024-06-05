@@ -118,7 +118,9 @@ abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 	- You must use the module `request`
 
 ```sh
-
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./2-statuscode.js https://alx-intranet.hbtn.io/status
+code: 200
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 * **Repo:**
