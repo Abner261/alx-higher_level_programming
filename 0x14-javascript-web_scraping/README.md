@@ -96,7 +96,11 @@ abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 	- If an error occurred during while writing, print the error object
 
 ```sh
-
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./1-writeme.js my_file.txt "Python is cool"
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt
+Python is coolabner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ cat my_file.txt ; echo ""
+Python is cool
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 * **Repo:**
