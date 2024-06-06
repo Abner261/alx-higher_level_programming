@@ -279,7 +279,29 @@ You must use the [Star wars API](https://swapi-api.alx-tools.com/)
 You must use the module `request`
 
 ```sh
-
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./100-starwars_characters.js 3
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$ ./100-starwars_characters.js 3
+C-3PO
+Obi-Wan Kenobi
+Leia Organa
+Darth Vader
+R2-D2
+Chewbacca
+Han Solo
+Jabba Desilijic Tiure
+Yoda
+Luke Skywalker
+Palpatine
+Wedge Antilles
+Lando Calrissian
+Boba Fett
+Ackbar
+Arvel Crynyd
+Nien Nunb
+Wicket Systri Warrick
+Mon Mothma
+Bib Fortuna
+abner@ubuntu:~/alx-higher_level_programming/0x14-javascript-web_scraping$
 ```
 
 * **Repo:**
